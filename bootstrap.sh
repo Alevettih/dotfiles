@@ -5,9 +5,9 @@ NC='\033[0m' # No Color
 echo ""
 echo -e "${RED}Update system...${NC}"
 echo ""
-sudo apt-get update        # Fetches the list of available updates
-sudo apt-get upgrade       # Strictly upgrades the current packages
-sudo apt-get dist-upgrade  # Installs updates (new ones)
+sudo apt-get update --yes       # Fetches the list of available updates
+sudo apt-get upgrade --yes       # Strictly upgrades the current packages
+sudo apt-get dist-upgrade --yes  # Installs updates (new ones)
 
 echo ""
 echo -e "${RED}Install system dependencies...${NC}"
