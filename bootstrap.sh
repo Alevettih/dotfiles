@@ -72,7 +72,7 @@ echo -e "${RED}Install WebStorm${NC}"
 echo ""
 wget -O ~/Downloads/Webstorm.tar.gz "https://www.jetbrains.com/webstorm/download/download-thanks.html?platform=linux"
 tar xfz ~/Downloads/WebStorm.tar.gz -C /opt/
-cd /opt/WebStorm-*/bin
+cd /opt/WebStorm/bin
 bash ./webstorm.sh
 
 
