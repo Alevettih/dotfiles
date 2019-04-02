@@ -101,7 +101,7 @@ echo -e "${RED}Instal material theme${NC}"
 sudo apt-get gnome-themes-extra gtk2-engines-murrine bc --yes
 git clone --depth 1 https://github.com/nana-4/materia-theme
 cd materia-theme
-sudo ./install.sh -c dark -s compact
+sudo ./install.sh -c dark -s compact -g
 
 echo ""
 echo -e "${RED}Run autoremove...${NC}"
