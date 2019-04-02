@@ -97,6 +97,9 @@ ln -s ~/Projects/dotfiles/.ctags ~/.ctags
 echo -e "${RED}Create symbolic link for autostart applications${NC}"
 ln -s ~/Projects/dotfiles/autostart/* ~/.config/autostart/
 
+echo -e "${RED}Instal GNOME Tweak tools${NC}"
+sudo apt-get install gnome-tweak-tool --yes
+
 echo -e "${RED}Instal material theme${NC}"
 sudo apt-get gnome-themes-extra gtk2-engines-murrine bc --yes
 git clone --depth 1 https://github.com/nana-4/materia-theme
