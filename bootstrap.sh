@@ -70,7 +70,7 @@ mkdir ~/Projects
 echo ""
 echo -e "${RED}Install WebStorm${NC}"
 echo ""
-wget -O ~/Downloads/WebStorm.tar.gz "https://www.jetbrains.com/webstorm/download/download-thanks.html?platform=linux"
+wget -O ~/Downloads/WebStorm.tar.gz "https://download.jetbrains.com/product?code=IIU&latest&distribution=linux"
 sudo tar xvzf ~/Downloads/WebStorm.tar.gz -C /opt/
 cd /opt/WebStorm/bin
 bash ./webstorm.sh
