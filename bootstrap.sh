@@ -97,6 +97,12 @@ ln -s ~/Projects/dotfiles/.ctags ~/.ctags
 echo -e "${RED}Create symbolic link for autostart applications${NC}"
 ln -s ~/Projects/dotfiles/autostart/* ~/.config/autostart/
 
+echo -e "${RED}Instal material theme${NC}"
+sudo apt-get gnome-themes-extra gtk2-engines-murrine bc --yes
+git clone --depth 1 https://github.com/nana-4/materia-theme
+cd materia-theme
+sudo ./install.sh -c dark -s compact
+
 echo ""
 echo -e "${RED}Run autoremove...${NC}"
 echo ""
