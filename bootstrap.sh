@@ -71,19 +71,6 @@ ln -s ~/Projects/dotfiles/.ctags ~/.ctags
 echo -e "${RED}Create symbolic link for autostart applications${NC}"
 ln -s ~/Projects/dotfiles/autostart/* ~/.config/autostart/
 
-echo -e "${RED}Install GNOME Tweak tools${NC}"
-sudo apt-get install gnome-tweak-tool --yes
-
-echo -e "${RED}Install material theme${NC}"
-sudo apt-get gnome-themes-extra gtk2-engines-murrine bc --yes
-git clone --depth 1 https://github.com/nana-4/materia-theme
-cd materia-theme
-sudo ./install.sh -c dark -s compact -g
-
-echo "${RED}Install dash to panel${NC}"
-git clone https://github.com/home-sweet-gnome/dash-to-panel.git
-
-
 echo -e "${RED}Run autoremove...${NC}"
 sudo apt autoremove --yes
 
